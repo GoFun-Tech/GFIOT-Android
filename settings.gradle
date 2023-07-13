@@ -1,0 +1,36 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            credentials {
+                username 'maven中的username,需要替换'
+                password 'maven中的username,需要替换'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2397839-release-8Ilej2/'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            credentials {
+                username 'maven中的username,需要替换'
+                password 'maven中的username,需要替换'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2397839-release-8Ilej2/'
+        }
+    }
+}
+rootProject.name = "GFIOT-Android_Demo"
+include ':app'
